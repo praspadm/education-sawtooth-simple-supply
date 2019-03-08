@@ -26,6 +26,8 @@ RUN apt-get install -y --allow-unauthenticated -q \
 RUN pip3 install \
     psycopg2-binary
 
+RUN pip3 install -U protobuf
+
 WORKDIR /project/sawtooth-simple-supply
 
 ENV PATH $PATH:/project/sawtooth-simple-supply/bin
